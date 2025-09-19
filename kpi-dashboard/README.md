@@ -14,12 +14,13 @@ Creates fake customers, orders, and revenue history.
 
 ```bash
 python generate_sample_data.py
-
+```
 ### 2. Run the ETL Pipeline 
 
 - Loads the generated data into the SQLite database (db/kpi_data.db).
-
+```bash
 python etl.py
+```
 
 ### 3. Train the ML Models
 
@@ -34,5 +35,6 @@ python train_models.py
 ### 4. Launch the Dashboard
 
 Runs the Streamlit app to explore KPIs, segments, and churn risk.
-
+```bash
 streamlit run dashboard_app.py
+```
